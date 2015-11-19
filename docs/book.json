@@ -1,0 +1,9 @@
+{
+  "structure": {
+    "summary": "docs/SUMMARY.md"
+  },
+  "plugins": ["prism", "-highlight"],
+  "styles": {
+    "website": "docs/styles/website.css"
+  }
+}

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
-    "lint": "eslint",
+    "lint": "eslint src/",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -20,12 +20,15 @@
     "type": "git",
     "url": "https://github.com/mathieudutour/open-source-library.git"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Mathieu Dutour <mathieu@dutour.me> (http://mathieu.dutour.me/)",
   "license": "MIT",
   "devDependencies": {
     "ava": "0.5.0",
     "babel": "6.1.18",
+    "babel-eslint": "4.1.5",
     "commitizen": "2.4.6",
     "coveralls": "2.11.4",
     "cz-conventional-changelog": "1.1.4",
